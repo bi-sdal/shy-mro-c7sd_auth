@@ -1,4 +1,4 @@
-FROM sdal/mro-ldap-ssh-c7
+FROM sdal/mro-c7sd_auth
 
 LABEL maintainer="Aaron D. Schroeder" \
       contributors="Daniel Chen <chend@vt.edu>"
