@@ -16,7 +16,7 @@ RUN groupadd shiny \
 
 RUN su - -c "R -e \"install.packages(c('shiny', 'rmarkdown'), repos='https://cran.rstudio.com/')\""
 
-RUN wget -O shiny-server.rpm https://download3.rstudio.org/centos5.9/x86_64/shiny-server-1.5.4.869-rh5-x86_64.rpm \
+RUN wget -O shiny-server.rpm https://download3.rstudio.org/centos5.9/x86_64/shiny-server-1.5.6.875-rh5-x86_64.rpm \
     && yum -y install --nogpgcheck shiny-server.rpm
 
 RUN systemctl enable shiny-server
